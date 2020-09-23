@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="reach-score">
+        <div class="reach-score__value">
+          Alcance: <span>0</span> <span></span>
+        </div>
+        <div class="reach-score__per-second">
+          <span></span> por segundo: <span>0</span>
+        </div>
+      </div>
+      <div class="post-button">
+        <button class="post-button" onclick="postButtonAction()">Postar</button>
+      </div>
+      <div class="gado-button">
+        <button onclick="addOneGado()">
+          <div><b>Convencer um Gado</b></div>
+          <div>Cada gado faz uma postagem por minuto</div>
+          <div class="gado-button__value">Número de gados: <span>0</span></div>
+          <div class="gado-button__per-second">
+            postando <span>0</span> por segundo
+          </div>
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

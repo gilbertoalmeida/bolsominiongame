@@ -9,28 +9,53 @@
   </head>
   <body>
     <div class="main">
-      <div class="reach-score">
+      <div class="reach-score__container">
         <div class="reach-score__value">
-          Alcance: <span>0</span> <span></span>
+          <b>Alcance: <span>0</span></b>
         </div>
         <div class="reach-score__per-second">
-          <span></span> por segundo: <span>0</span>
+          Alcance por segundo (ApS): <span>0</span>
         </div>
       </div>
-      <div class="post-button">
+      <div class="post-button__container">
         <button class="post-button" onclick="postButtonAction()">Postar</button>
       </div>
-      <div class="gado-button">
-        <button onclick="addOneGado()">
-          <div><b>Convencer um Gado</b></div>
-          <div>Cada gado faz uma postagem por minuto</div>
-          <div class="gado-button__value">Número de gados: <span>0</span></div>
-          <div class="gado-button__per-second">
-            postando <span>0</span> por segundo
+      <div class="friends__container">
+        <button class="friends__button" onclick="addOneFriend()">
+          <div class="friends__number">
+            <b>Amigos nas redes ( <span>1, sua mãe</span> )</b>
+          </div>
+          <div>Cada postagem sua, alcança todos os seus amigos</div>
+          <div class="friends__next">
+            Alcance necessário para +1 amigo: <span>20</span>
+          </div>
+        </button>
+      </div>
+      <div class="gado__container">
+        <button class="gado__button" onclick="addOneGado()">
+          <div class="gado__number">
+            <b>Gados ( <span>0</span> )</b>
+          </div>
+          <div>Gados postam sobre você a cada hora</div>
+          <div>Suas redes têm em média: 5 amigos</div>
+          <div class="gado__next">
+            Alcance necessário para +1 gado: <span>130</span>
+          </div>
+        </button>
+      </div>
+      <div class="wapp__container">
+        <button class="wapp__button" onclick="addOneWapp()">
+          <div class="wapp__number">
+            <b>Grupos de Wapp ( <span>0</span> )</b>
+          </div>
+          <div>3 posts sobre você a cada hora</div>
+          <div>Cada grupo tem em média: 30 participantes</div>
+          <div class="wapp__next">
+            Alcance necessário para +1 grupo: <span>560</span>
           </div>
         </button>
       </div>
     </div>
   </body>
-  <script src="index.js"></script>
+  <script src="main.js"></script>
 </html>

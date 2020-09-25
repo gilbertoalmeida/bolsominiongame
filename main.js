@@ -120,17 +120,29 @@ let gadoPostsPerSecond = 0;
 let gadoReachPerSecond = 0;
 let gadoAverageFriends = 5;
 
+function calculateGadoRPS() {
+  gadoReachPerSecond = (gadoNumber * gadoAverageFriends) / 60 / 60;
+}
+
 function addOneGado() {
   if (currentReach >= gadoNecessaryReach) {
     gadoNumber = gadoNumber + 1;
     currentReach = currentReach - gadoNecessaryReach;
-    gadoReachPerSecond = (gadoNumber * gadoAverageFriends) / 60 / 60;
+    calculateGadoRPS();
     gadoNecessaryReach = gadoNecessaryReach + 10 * gadoNumber;
     updateCurrentReachText();
     updateReachPerSecondValue();
     updateReachPerSecondText();
     updateGadoText();
   }
+}
+
+function updradeGadoFriends() {
+  gadoAverageFriends = gadoAverageFriends * 2;
+  calculateGadoRPS();
+  updateReachPerSecondValue();
+  updateReachPerSecondText();
+  updateGadoText();
 }
 
 function updateGadoText() {
@@ -141,6 +153,10 @@ function updateGadoText() {
   document
     .getElementsByClassName("gado__next")[0]
     .getElementsByTagName("span")[0].innerHTML = +gadoNecessaryReach;
+
+  document
+    .getElementsByClassName("gado-friends__number")[0]
+    .getElementsByTagName("span")[0].innerHTML = +gadoAverageFriends;
 }
 
 /* 

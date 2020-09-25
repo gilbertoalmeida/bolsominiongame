@@ -61,7 +61,9 @@
             <div class="resources__container__body__main">
               <div class="resources__container__body__main__info">
                 <div>Gados postam sobre você a cada hora</div>
-                <div>Suas redes têm em média: 5 amigos</div>
+                <div class="gado-friends__number">
+                  Suas redes têm em média: <span>5</span> amigos
+                </div>
               </div>
               <div class="resources__container__body__main__button">
                 <button class="buy-button gado__button" onclick="addOneGado()">
@@ -72,7 +74,12 @@
               </div>
             </div>
             <div class="resources__container__body__upgrades">
-              <div class="upgrades upgrades__more-friends">+ F</div>
+              <button
+                onclick="updradeGadoFriends()"
+                class="upgrades upgrades__more-friends"
+              >
+                +F
+              </button>
             </div>
           </div>
         </div>

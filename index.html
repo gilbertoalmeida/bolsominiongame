@@ -20,40 +20,89 @@
       <div class="post-button__container">
         <button class="post-button" onclick="postButtonAction()">Postar</button>
       </div>
-      <div class="friends__container">
-        <button class="friends__button" onclick="addOneFriend()">
-          <div class="friends__number">
-            <b>Amigos nas redes ( <span>1, sua mãe</span> )</b>
+      <div class="friends__area">
+        <div class="resources__container">
+          <div class="resources__container__title">
+            <div class="friends__number">
+              <b>Amigos nas redes ( <span>1, sua mãe</span> )</b>
+            </div>
           </div>
-          <div>Cada postagem sua, alcança todos os seus amigos</div>
-          <div class="friends__next">
-            Alcance necessário para +1 amigo: <span>20</span>
+          <div class="resources__container__body">
+            <div class="resources__container__body__main">
+              <div class="resources__container__body__main__info">
+                <div>Cada postagem sua, alcança todos os seus amigos</div>
+              </div>
+              <div class="resources__container__body__main__button">
+                <button
+                  class="buy-button friends__button"
+                  onclick="addOneFriend()"
+                >
+                  <div class="friends__next">
+                    +1 amigo (Alcance necessário: <span>20</span>)
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="resources__container__body__upgrades">
+              <div class="upgrades upgrades__more-friends">+ F</div>
+            </div>
           </div>
-        </button>
+        </div>
       </div>
-      <div class="gado__container">
-        <button class="gado__button" onclick="addOneGado()">
-          <div class="gado__number">
-            <b>Gados ( <span>0</span> )</b>
+
+      <div class="gado__area">
+        <div class="resources__container">
+          <div class="resources__container__title">
+            <div class="gado__number">
+              <b>Gados ( <span>0</span> )</b>
+            </div>
           </div>
-          <div>Gados postam sobre você a cada hora</div>
-          <div>Suas redes têm em média: 5 amigos</div>
-          <div class="gado__next">
-            Alcance necessário para +1 gado: <span>130</span>
+          <div class="resources__container__body">
+            <div class="resources__container__body__main">
+              <div class="resources__container__body__main__info">
+                <div>Gados postam sobre você a cada hora</div>
+                <div>Suas redes têm em média: 5 amigos</div>
+              </div>
+              <div class="resources__container__body__main__button">
+                <button class="buy-button gado__button" onclick="addOneGado()">
+                  <div class="gado__next">
+                    +1 gado (Alcance necessário: <span>130</span>)
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="resources__container__body__upgrades">
+              <div class="upgrades upgrades__more-friends">+ F</div>
+            </div>
           </div>
-        </button>
+        </div>
       </div>
-      <div class="wapp__container">
-        <button class="wapp__button" onclick="addOneWapp()">
-          <div class="wapp__number">
-            <b>Grupos de Wapp ( <span>0</span> )</b>
+      <div class="wapp__area">
+        <div class="resources__container">
+          <div class="resources__container__title">
+            <div class="wapp__number">
+              <b>Grupos de Wapp ( <span>0</span> )</b>
+            </div>
           </div>
-          <div>3 posts sobre você a cada hora</div>
-          <div>Cada grupo tem em média: 30 participantes</div>
-          <div class="wapp__next">
-            Alcance necessário para +1 grupo: <span>560</span>
+          <div class="resources__container__body">
+            <div class="resources__container__body__main">
+              <div class="resources__container__body__main__info">
+                <div>3 posts sobre você a cada hora</div>
+                <div>Cada grupo tem em média: 30 participantes</div>
+              </div>
+              <div class="resources__container__body__main__button">
+                <button class="buy-button wapp__button" onclick="addOneWapp()">
+                  <div class="wapp__next">
+                    +1 grupo (Alcance necessário: <span>560</span>)
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="resources__container__body__upgrades">
+              <div class="upgrades upgrades__more-friends">+ P</div>
+            </div>
           </div>
-        </button>
+        </div>
       </div>
     </div>
   </body>

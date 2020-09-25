@@ -23,7 +23,7 @@ let currentReach = 0;
 let postsPerSecond = 0;
 let postPerSecondInterval;
 
-// startPerSecondInterval();
+startPerSecondInterval();
 
 function postButtonAction() {
   currentReach += friendsNumber;
@@ -76,7 +76,7 @@ function startPerSecondInterval() {
 
 function loopFunction() {
   currentReach = currentReach + postsPerSecond;
-  updateReachScoreValueText();
+  updateCurrentReachText();
 }
 
 /* 
